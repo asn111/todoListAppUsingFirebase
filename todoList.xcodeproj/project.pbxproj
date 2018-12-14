@@ -8,20 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		29F9F05621C22EC300804398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9F05521C22EC300804398 /* AppDelegate.swift */; };
-		29F9F05821C22EC300804398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9F05721C22EC300804398 /* ViewController.swift */; };
+		29F9F05821C22EC300804398 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9F05721C22EC300804398 /* MainViewController.swift */; };
 		29F9F05B21C22EC300804398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F9F05921C22EC300804398 /* Main.storyboard */; };
 		29F9F05D21C22EC500804398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F9F05C21C22EC500804398 /* Assets.xcassets */; };
 		29F9F06021C22EC500804398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F9F05E21C22EC500804398 /* LaunchScreen.storyboard */; };
+		29F9F06E21C2352000804398 /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9F06D21C2352000804398 /* RegisterUserViewController.swift */; };
+		29F9F07021C23B5500804398 /* FirebaseApiCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9F06F21C23B5500804398 /* FirebaseApiCalls.swift */; };
+		29F9F07221C23B6F00804398 /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9F07121C23B6F00804398 /* HelperClass.swift */; };
+		29F9F07521C270D600804398 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9F07321C270D600804398 /* DataCell.swift */; };
+		29F9F07621C270D600804398 /* DataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F9F07421C270D600804398 /* DataCell.xib */; };
+		29F9F07821C277E900804398 /* DataListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9F07721C277E900804398 /* DataListViewController.swift */; };
+		29F9F07A21C27B5300804398 /* Dataa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9F07921C27B5300804398 /* Dataa.swift */; };
+		29F9F07C21C27DCC00804398 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9F07B21C27DCC00804398 /* Preferences.swift */; };
+		29F9F07E21C27E0800804398 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9F07D21C27E0800804398 /* Constants.swift */; };
+		29F9F08021C28D3900804398 /* SubmitTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9F07F21C28D3900804398 /* SubmitTaskViewController.swift */; };
+		29F9F0A121C394DD00804398 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29F9F0A021C394DD00804398 /* GoogleService-Info.plist */; };
+		2E2389D65CD633B7AD722E80 /* Pods_todoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C410E5B7A3F1C85062CA7E /* Pods_todoList.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		29F9F05221C22EC300804398 /* todoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F9F05521C22EC300804398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29F9F05721C22EC300804398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29F9F05721C22EC300804398 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		29F9F05A21C22EC300804398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29F9F05C21C22EC500804398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29F9F05F21C22EC500804398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29F9F06121C22EC500804398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F9F06D21C2352000804398 /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
+		29F9F06F21C23B5500804398 /* FirebaseApiCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseApiCalls.swift; sourceTree = "<group>"; };
+		29F9F07121C23B6F00804398 /* HelperClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperClass.swift; sourceTree = "<group>"; };
+		29F9F07321C270D600804398 /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		29F9F07421C270D600804398 /* DataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataCell.xib; sourceTree = "<group>"; };
+		29F9F07721C277E900804398 /* DataListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListViewController.swift; sourceTree = "<group>"; };
+		29F9F07921C27B5300804398 /* Dataa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataa.swift; sourceTree = "<group>"; };
+		29F9F07B21C27DCC00804398 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		29F9F07D21C27E0800804398 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		29F9F07F21C28D3900804398 /* SubmitTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTaskViewController.swift; sourceTree = "<group>"; };
+		29F9F09F21C38F0800804398 /* todoList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = todoList.entitlements; sourceTree = "<group>"; };
+		29F9F0A021C394DD00804398 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		77C410E5B7A3F1C85062CA7E /* Pods_todoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A9A6BE262FC0CD77018A17A /* Pods-todoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todoList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todoList/Pods-todoList.debug.xcconfig"; sourceTree = "<group>"; };
+		DE8389DEA91A3F0E77D8B12F /* Pods-todoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todoList.release.xcconfig"; path = "Pods/Target Support Files/Pods-todoList/Pods-todoList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E2389D65CD633B7AD722E80 /* Pods_todoList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +68,8 @@
 			children = (
 				29F9F05421C22EC300804398 /* todoList */,
 				29F9F05321C22EC300804398 /* Products */,
+				2D384330B582740E25DEE43F /* Pods */,
+				DE49716D67557B25F8CB6B5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +84,75 @@
 		29F9F05421C22EC300804398 /* todoList */ = {
 			isa = PBXGroup;
 			children = (
+				29F9F09F21C38F0800804398 /* todoList.entitlements */,
+				29F9F06721C22EE900804398 /* Controller */,
+				29F9F06921C22F0300804398 /* Views */,
+				29F9F06821C22EF500804398 /* Models */,
+				29F9F06A21C230C800804398 /* HelperClasses */,
 				29F9F05521C22EC300804398 /* AppDelegate.swift */,
-				29F9F05721C22EC300804398 /* ViewController.swift */,
 				29F9F05921C22EC300804398 /* Main.storyboard */,
-				29F9F05C21C22EC500804398 /* Assets.xcassets */,
 				29F9F05E21C22EC500804398 /* LaunchScreen.storyboard */,
 				29F9F06121C22EC500804398 /* Info.plist */,
+				29F9F0A021C394DD00804398 /* GoogleService-Info.plist */,
+				29F9F05C21C22EC500804398 /* Assets.xcassets */,
 			);
 			path = todoList;
+			sourceTree = "<group>";
+		};
+		29F9F06721C22EE900804398 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				29F9F05721C22EC300804398 /* MainViewController.swift */,
+				29F9F06D21C2352000804398 /* RegisterUserViewController.swift */,
+				29F9F07721C277E900804398 /* DataListViewController.swift */,
+				29F9F07F21C28D3900804398 /* SubmitTaskViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		29F9F06821C22EF500804398 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29F9F07921C27B5300804398 /* Dataa.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29F9F06921C22F0300804398 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29F9F07321C270D600804398 /* DataCell.swift */,
+				29F9F07421C270D600804398 /* DataCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		29F9F06A21C230C800804398 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				29F9F06F21C23B5500804398 /* FirebaseApiCalls.swift */,
+				29F9F07121C23B6F00804398 /* HelperClass.swift */,
+				29F9F07B21C27DCC00804398 /* Preferences.swift */,
+				29F9F07D21C27E0800804398 /* Constants.swift */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		2D384330B582740E25DEE43F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A9A6BE262FC0CD77018A17A /* Pods-todoList.debug.xcconfig */,
+				DE8389DEA91A3F0E77D8B12F /* Pods-todoList.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE49716D67557B25F8CB6B5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77C410E5B7A3F1C85062CA7E /* Pods_todoList.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29F9F06421C22EC500804398 /* Build configuration list for PBXNativeTarget "todoList" */;
 			buildPhases = (
+				04CDB299E615867594A20208 /* [CP] Check Pods Manifest.lock */,
 				29F9F04E21C22EC300804398 /* Sources */,
 				29F9F04F21C22EC300804398 /* Frameworks */,
 				29F9F05021C22EC300804398 /* Resources */,
+				1FC20B735C4C78E35F6817BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +189,11 @@
 				TargetAttributes = {
 					29F9F05121C22EC300804398 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,19 +222,83 @@
 			files = (
 				29F9F06021C22EC500804398 /* LaunchScreen.storyboard in Resources */,
 				29F9F05D21C22EC500804398 /* Assets.xcassets in Resources */,
+				29F9F0A121C394DD00804398 /* GoogleService-Info.plist in Resources */,
+				29F9F07621C270D600804398 /* DataCell.xib in Resources */,
 				29F9F05B21C22EC300804398 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04CDB299E615867594A20208 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-todoList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FC20B735C4C78E35F6817BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-todoList/Pods-todoList-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-todoList/Pods-todoList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		29F9F04E21C22EC300804398 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29F9F05821C22EC300804398 /* ViewController.swift in Sources */,
+				29F9F07821C277E900804398 /* DataListViewController.swift in Sources */,
+				29F9F05821C22EC300804398 /* MainViewController.swift in Sources */,
+				29F9F07521C270D600804398 /* DataCell.swift in Sources */,
+				29F9F07221C23B6F00804398 /* HelperClass.swift in Sources */,
+				29F9F08021C28D3900804398 /* SubmitTaskViewController.swift in Sources */,
+				29F9F06E21C2352000804398 /* RegisterUserViewController.swift in Sources */,
+				29F9F07E21C27E0800804398 /* Constants.swift in Sources */,
 				29F9F05621C22EC300804398 /* AppDelegate.swift in Sources */,
+				29F9F07021C23B5500804398 /* FirebaseApiCalls.swift in Sources */,
+				29F9F07A21C27B5300804398 /* Dataa.swift in Sources */,
+				29F9F07C21C27DCC00804398 /* Preferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,17 +442,20 @@
 		};
 		29F9F06521C22EC500804398 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A9A6BE262FC0CD77018A17A /* Pods-todoList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9TSYUBBW4K;
+				CODE_SIGN_ENTITLEMENTS = todoList/todoList.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XCSAD8U85J;
 				INFOPLIST_FILE = todoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SelfIT.todoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.embrace.todoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TodoListApp;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,17 +463,20 @@
 		};
 		29F9F06621C22EC500804398 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8389DEA91A3F0E77D8B12F /* Pods-todoList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9TSYUBBW4K;
+				CODE_SIGN_ENTITLEMENTS = todoList/todoList.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XCSAD8U85J;
 				INFOPLIST_FILE = todoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SelfIT.todoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.embrace.todoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TodoListApp;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
