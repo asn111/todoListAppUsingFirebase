@@ -57,6 +57,7 @@ class SubmitTaskViewController: UIViewController {
         
         taskData = Preference.shared.getArrayValue(currentLevelKey: Constants.shared.currentLevelKeyTask) as! [String]
         dateNTime = Preference.shared.getArrayValue(currentLevelKey: Constants.shared.currentLevelKeyDate) as! [String]
+        print(Preference.shared.getData(currentLevelKey: Constants.shared.currentLevelKeyNotif))
     }
     
 }

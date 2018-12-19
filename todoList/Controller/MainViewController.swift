@@ -14,6 +14,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
+    
     //MARK: Actions
     @IBAction func loginBtnPressed(_ sender: Any) {
         FirebaseApiCalls.shared.login(email: userNameTF.text!, passWord: passwordTF.text!, vc: self) {
@@ -56,9 +57,27 @@ class MainViewController: UIViewController {
                 }
             }
         }
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let notificationNme = NSNotification.Name(PUSH_NOTIFICATIONS)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.parseNotification(_:)), name: notificationNme, object: nil)
     }
 
-
+    @objc func parseNotification(_ notification: NSNotification) {
+        
+        print("Recieved: \(notification)")
+        guard let aps = notification.userInfo!["aps"] as? NSDictionary else {
+            return
+        }
+        print(aps)
+        guard let alert = aps["alert"] as? NSDictionary else {return}
+        guard let title = alert["title"] as? String else {return}
+        guard let body = alert["body"] as? String else {return}
+        //TODO convert object to json
+        //if(notifObj.alert.body.isSilent==1){
+            
+        let notifObj: Notif = Notif.init()
+        notifObj.alert.title = title
+        notifObj.alert.body = body
+        Preference.shared.setData(value: notifObj, currentLevelKey: Constants.shared.currentLevelKeyNotif)
+    }
 }
-

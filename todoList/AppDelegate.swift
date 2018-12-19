@@ -4,7 +4,6 @@
 //
 //  Created by Ahsan Iqbal on 13/12/2018.
 //  Copyright © 2018 SelfIT. All rights reserved.
-//
 
 import UIKit
 
@@ -63,7 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // Print full message.
-        print(userInfo)
+        //print(userInfo)
     }
 
     // [END receive_message]
@@ -102,7 +101,7 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         }
         
         // Print full message.
-        print(userInfo)
+        //print(userInfo)
         
         // Change this to your preferred presentation option
         completionHandler([.alert, .badge, .sound])
@@ -118,8 +117,9 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         }
         
         // Print full message.
-        print(userInfo)
-        
+        //print(userInfo)
+        let notificationNme = NSNotification.Name(PUSH_NOTIFICATIONS)
+        NotificationCenter.default.post(name: notificationNme, object: nil, userInfo:userInfo)
         completionHandler()
     }
     
