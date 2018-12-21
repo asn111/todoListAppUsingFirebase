@@ -18,6 +18,8 @@ import UIKit
 
 // User Device
 
+var PUSH_NOTIFICATIONS = "app_notifications"
+
 
 // show alert box
 func showAlert(title: String, message: String , viewControler: UIViewController){

@@ -16,13 +16,13 @@ class Preference {
      var value: String!
      var status: Bool!
      var array: Array<Any>!
+     var dataObj: Notif!
 
     // set login Status
     func setStatus(value: Bool, currentLevelKey: String) {
         self.status = value
         if(currentLevelKey != "") {
             if(currentLevelKey == "isLogin"){
-                Constants.shared.currentLevelKeyStatus = currentLevelKey
                 sharedPreferences.set(value, forKey: currentLevelKey)
                 sharedPreferences.synchronize()
             }
@@ -49,12 +49,10 @@ class Preference {
         self.array = array
         
         if currentLevelKey == "task" {
-            Constants.shared.currentLevelKeyTask = currentLevelKey
             sharedPreferences.set(array, forKey: currentLevelKey)
             sharedPreferences.synchronize()
         }
         if currentLevelKey == "date" {
-            Constants.shared.currentLevelKeyDate = currentLevelKey
             sharedPreferences.set(array, forKey: currentLevelKey)
             sharedPreferences.synchronize()
         }
@@ -85,17 +83,14 @@ class Preference {
         
         if(currentLevelKey != "") {
         if(currentLevelKey == "task"){
-        Constants.shared.currentLevelKeyTask = currentLevelKey
         sharedPreferences.set(value, forKey: currentLevelKey)
         sharedPreferences.synchronize()
         }
         if(currentLevelKey == "date"){
-            Constants.shared.currentLevelKeyDate = currentLevelKey
             sharedPreferences.set(value, forKey: currentLevelKey)
             sharedPreferences.synchronize()
         }
         if(currentLevelKey == "time"){
-            Constants.shared.currentLevelKeyTime = currentLevelKey
             sharedPreferences.set(value, forKey: currentLevelKey)
             sharedPreferences.synchronize()
         }
@@ -116,6 +111,35 @@ class Preference {
         }
         return returingValue
     }
+    
+    // save notif data obj
+    func setData(value: Notif, currentLevelKey: String) {
+        self.dataObj = value
+        if(currentLevelKey != "") {
+            let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: value)
+            sharedPreferences.set(encodedData, forKey: currentLevelKey)
+            sharedPreferences.synchronize()
+        }
+    }
+    
+    // get notif data values
+    func getData(currentLevelKey: String) -> Notif {
+        var returingValue: Data!
+        var decoded: Notif!
+        
+        if(currentLevelKey == ""){
+            // hendle error
+        }
+        if(currentLevelKey != ""){
+            if(!(currentLevelKey.isEmpty)){
+                returingValue = sharedPreferences.object(forKey: Constants.shared.currentLevelKeyNotif) as? Data
+                decoded = NSKeyedUnarchiver.unarchiveObject(with: returingValue) as? Notif
+            }
+        }
+        return decoded
+        
+    }
+    
     // remove values
     func removeValues(key: String) {
         sharedPreferences.removeObject(forKey: key)

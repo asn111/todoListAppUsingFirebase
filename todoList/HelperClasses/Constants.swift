@@ -26,6 +26,8 @@ class Constants {
     var currentLevelKeyDate = "date"
     var currentLevelKeyTime = "time"
     var currentLevelKeyStatus = "isLogin"
+    var currentLevelKeyNotif = "notif"
+
 
 
 
