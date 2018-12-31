@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MainViewController: UIViewController {
 
@@ -21,6 +22,7 @@ class MainViewController: UIViewController {
             responce in
             print(responce)
             if responce == true {
+                Analytics.logEvent("AnalyticsEvent_Successfuly_Loggedin", parameters: ["newValue": "\(self.userNameTF.text!) \(self.passwordTF.text!)"])
                 print("user successfuly Loggedin")
                 if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "dataList") as? DataListViewController {
                     if let navigator = self.navigationController {
